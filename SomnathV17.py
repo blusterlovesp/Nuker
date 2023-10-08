@@ -13,13 +13,7 @@ token = __config__["token"]
 os.system("cls") if os.name == "nt" else os.system("clear")
 
 SomnathV17_art = """
-    {}███████  ██████  ███    ███ ███    ██  █████  ████████ ██   ██     ██    ██  ██ ███████ 
-    {}██      ██    ██ ████  ████ ████   ██ ██   ██    ██    ██   ██     ██    ██ ███      ██ 
-    {}███████ ██    ██ ██ ████ ██ ██ ██  ██ ███████    ██    ███████     ██    ██  ██     ██  
-         {}██ ██    ██ ██  ██  ██ ██  ██ ██ ██   ██    ██    ██   ██      ██  ██   ██    ██  
-    {}███████  ██████  ██      ██ ██   ████ ██   ██    ██    ██   ██       ████    ██    ██{}
-
-                                     SomnathV17 On Top!   
+                                   BLUSTER  On Top!   
                               ═══════════════════════════════════         
                          ═════════════════════════════════════════════
 """.format("\x1b[38;5;17m", "\x1b[38;5;18m", "\x1b[38;5;19m", "\x1b[38;5;20m", "\x1b[38;5;21m", "\x1b[0m")
@@ -250,12 +244,12 @@ class SomnathV17:
 
     
     def menu(self):
-        os.system(f"cls & title SomnathV17 Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
+        os.system(f"cls & title BLUSTER Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
         print(SomnathV17_art + options + "\n")
-        ans = input("{}({}SomnathV17{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")) 
+        ans = input("{}({}BLUSTER{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")) 
         
         if ans in ["1", "01"]:
-            scrape = input("{}({}SomnathV17{}) Fetch IDs [Y/N]{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+            scrape = input("{}({}BLUSTER{}) Fetch IDs [Y/N]{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             if scrape.lower() == "y":
                 try:
                     guild = __client__.get_guild(int(guildid))
@@ -274,7 +268,7 @@ class SomnathV17:
                     t.join()
                     
             time.sleep(3)
-            print("{}({}SomnathV17{}) Banned {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.banned), len(members)))
+            print("{}({}BLUSTER{}) Banned {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.banned), len(members)))
             time.sleep(1.5)
             self.menu()
             
@@ -288,18 +282,18 @@ class SomnathV17:
                     t.join()
             
             time.sleep(3)
-            print("{}({}SomnathV17{}) Kicked {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.kicked), len(members)))
+            print("{}({}BLUSTER{}) Kicked {}/{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.kicked), len(members)))
             time.sleep(1.5)
             self.menu()
             
         elif ans in ["3", "03"]:
-            days = int(input("{}({}SomnathV17{}) Days{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
+            days = int(input("{}({}BLUSTER{}) Days{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
             self.execute_prune(guildid, days, token)
             time.sleep(1.5)
             self.menu()
             
         elif ans in ["4", "04"]:
-            type = input("{}({}SomnathV17{}) Channels Type ['t', 'v']{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+            type = input("{}({}BLUSTER{}) Channels Type ['t', 'v']{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             type = 2 if type == "v" else 0
             amount = int(input("{}({}SomnathV17{}) Amount{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
             self.channels.clear()
@@ -310,7 +304,7 @@ class SomnathV17:
                     t.join()
                 
             time.sleep(3)
-            print("{}({}SomnathV17{}) Created {}/{} channels".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.channels), amount))
+            print("{}({}BLUSTER{}) Created {}/{} channels".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.channels), amount))
             time.sleep(1.5)
             self.menu()
             
@@ -324,7 +318,7 @@ class SomnathV17:
                     t.join()
                 
             time.sleep(3)
-            print("{}({}SomnathV17{}) Created {}/{} roles".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.roles), amount))
+            print("{}({}BLUSTER{}) Created {}/{} roles".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.roles), amount))
             time.sleep(1.5)
             self.menu()
             
@@ -338,7 +332,7 @@ class SomnathV17:
                     t.join()
                 
             time.sleep(3)
-            print("{}({}SomnathV17{}) Deleted {}/{} channels".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.channels), len(channels)))
+            print("{}({}BLUSTER{}) Deleted {}/{} channels".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.channels), len(channels)))
             time.sleep(1.5)
             self.menu()
             
@@ -352,7 +346,7 @@ class SomnathV17:
                     t.join()
                 
             time.sleep(3)
-            print("{}({}SomnathV17{}) Deleted {}/{} roles".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.roles), len(roles)))
+            print("{}({}BLUSTER{}) Deleted {}/{} roles".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.roles), len(roles)))
             time.sleep(1.5)
             self.menu()
             
@@ -366,13 +360,13 @@ class SomnathV17:
                     t.join()
                     
             time.sleep(3)
-            print("{}({}SomnathV17{}) Deleted {}/{} emojis".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.emojis), len(emojis)))
+            print("{}({}BLUSTER{}) Deleted {}/{} emojis".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.emojis), len(emojis)))
             time.sleep(1.5)
             self.menu()
             
         elif ans in ["9", "09"]:
             self.messages.clear(); self.channels.clear()
-            amount = int(input("{}({}SomnathV17{}) Amount{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
+            amount = int(input("{}({}BLUSTER{}) Amount{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")))
             channels = self.session.get(f"https://discord.com/api/v9/guilds/{guildid}/channels", headers={"Authorization": f"Bot {token}"}).json()
             for channel in channels: self.channels.append(channel['id'])
             channelz = cycle(self.channels)
@@ -383,7 +377,7 @@ class SomnathV17:
                     t.join()
                     
             time.sleep(3)
-            print("{}({}SomnathV17{}) Spammed {}/{} messages".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.messages), amount))
+            print("{}({}BLUSTER{}) Spammed {}/{} messages".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.messages), amount))
             time.sleep(1.5)
             self.menu()
             
@@ -392,38 +386,38 @@ class SomnathV17:
                 response = self.session.get("https://github.com/notspeezy/SomnathV17-Nuker/releases/latest")
                 check_version = response.headers.get('location').split('/')[7].split('v')[1]
                 if VERSION != check_version:
-                    print("{}({}SomnathV17{}) You're using an outdated version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+                    print("{}({}BLUSTER{}) You're using an outdated version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
                     webbrowser.open(f"https://github.com/notspeezy/SomnathV17-Nuker/releases/tag/{check_version}")
                 else:
-                    print("{}({}SomnathV17{}) You're using the current version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+                    print("{}({}BLUSTER{}) You're using the current version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             except:
-                print("{}({}SomnathV17{}) Couldn't reach the releases!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+                print("{}({}BLUSTER{}) Couldn't reach the releases!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             
             time.sleep(1.5)
             self.menu()
     
         
         elif ans == "11":
-            print("- SomnathV17 Nuker on top!\n- Press enter to return.")
+            print("- BLUSTER Nuker on top!\n- Press enter to return.")
             input("")
             self.menu()
         
         elif ans == "12":
-            print("{}({}SomnathV17{}) Thanks for using SomnathV17 Nuker!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+            print("{}({}BLUSTER{}) Thanks for using BLUSTER Nuker!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             time.sleep(1.5)
             os._exit(0)
             
     
 @__client__.event
 async def on_ready():
-    print("{}({}SomnathV17{}) Authenticated as{}: {}{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", f"{__client__.user.name}#{__client__.user.discriminator}"))
+    print("{}({}BLUSTER{}) Authenticated as{}: {}{}".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", f"{__client__.user.name}#{__client__.user.discriminator}"))
     time.sleep(1.5)
     SomnathV17().menu()
     
 
 if __name__ == "__main__":
     try:
-        os.system("title SomnathV17 Nuker ^| Authentication & mode con: cols=95 lines=25")
+        os.system("title BLUSTER Nuker ^| Authentication & mode con: cols=95 lines=25")
         guildid = input("{}({}SomnathV17{}) Guild ID{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
         __client__.run(token, bot=True)
     except Exception as e:
